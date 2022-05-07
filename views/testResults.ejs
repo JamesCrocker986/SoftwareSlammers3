@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="col-6">
+    <h1 class="title">Test Results</h1>
+    <h1>Grade Calculation</h1>
+    <% testInfo.forEach(test => { %>
+      <h5> <%= test.id %>: <%= test.grade %>%</h5>
+    <% }); %>
+    <% proofofmathInfo.forEach(test => { %>
+      <h5> <%= test.id %>: <%= test.grade %> </h5>
+    <% }); %>
+    <h5> <%= letterGrade[0].id %>: <%= letterGrade[0].grade %> </h5>
+  </div>
+</div>

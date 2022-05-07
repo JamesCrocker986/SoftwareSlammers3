@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="col-6">
+    <h1>Add Test</h1>
+    <h5><%= flag %></h5>
+    <p>Enter a Test Case:</p>
+    <form action="/addTest" method="post">
+      <label for="hw1">Homework 1</label>
+      <input type="text" name="hw1" value="<%= testInfo[0].grade%> ">
+
+      <label for="hw2">Homework 2</label>
+      <input type="text" name="hw2" value="<%= testInfo[1].grade%> ">
+
+      <label for="hw3">Homework 3</label>
+      <input type="text" name="hw3" value="<%= testInfo[2].grade%> ">
+
+      <label for="e1">Exam 1</label>
+      <input type="text" name="e1" value="<%= testInfo[3].grade%> ">
+
+      <label for="e2">Exam 2</label>
+      <input type="text" name="e2" value="<%= testInfo[4].grade%> ">
+
+      <input type="submit" name="" value="Submit">
+    </form>
+  </div>
+</div>
